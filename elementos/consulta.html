@@ -1,0 +1,60 @@
+<section class="area-inicio" >
+    <div class="container">
+        <h2 class="area-inicio-title">Consulta</h2>
+        <ul class="nav">
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="consulta.html">Consulta</a></li>
+        </ul>
+    </div>
+</section>
+<section id="consulta" class="padded">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group" id="lista-categorias">
+
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <h3 id="categoria-nombre"></h3>
+                <p id="categoria-descripcion"></p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="tabla-tab" data-bs-toggle="tab" data-bs-target="#tabla" type="button" role="tab" aria-controls="tabla" aria-selected="true">Tabla</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="cuadricula-tab" data-bs-toggle="tab" data-bs-target="#cuadricula" type="button" role="tab" aria-controls="cuadricula" aria-selected="false">Cuadricula</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabla" role="tabpanel" aria-labelledby="home-tab">
+
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Cod</th>
+                                    <th>Nombre</th>
+                                    <th>Detalle</th>
+                                    <th class="text-end">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-productos">
+        
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="cuadricula" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row row-cols-1 row-cols-md-3 g-4" id="cards-productos">
+                            
+                        </div>
+                  </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $.getScript("elementos/consulta.js");
+</script>

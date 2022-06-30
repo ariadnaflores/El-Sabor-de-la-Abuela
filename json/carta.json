@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Tiramisú",
+        "source": "El postre más emblemático de Italia. Su origen se lo disputan dos regiones: Véneto y la Toscana.",
+        "price": "S/20.00"
+    },
+    {
+        "name": "Cheesecake",
+        "source": "La cheesecake o tarta de queso es uno de los postres más internacionalizados que existen y también una de las recetas más antiguas. Su origen se remonta a Grecia",
+        "price": "S/10.00"
+                
+    },
+    {
+        "name": "Baklavas",
+        "source": "Dulces y crujientes. Así son las baklavas, unos pequeños pastelitos hechos con pasta de nueces recubiertos con almíbar o miel que son una verdadera explosión de sabor en la boca. Muy típicos de Oriente Medio",
+        "price": "S/15.00"
+    },
+    {
+        "name": "Waffles",
+        "source": "Bruselas es el paraíso de los dulces. Y no sólo por sus deliciosos bombones, sino también por sus waffles (gofres).",
+        "price": "S/15.00"
+    },
+    {
+        "name": "Pavlova ",
+        "source": "Dos países, Australia y Nueva Zelanda, se disputan la propiedad de esta receta de merengue y frutos rojos, crujiente por fuera y cremosa por dentro. Un homenaje muy delicioso.",
+        "price": "S/20.00"
+    }, 
+    {
+        "name": "Alfajores",
+        "source": "El alfajor es una golosina argentina que se elabora desde hace más de 130 años.",
+        "price": "S/10.00"
+    },
+    {
+        "name": "Tarta sacher",
+        "source": "Amantes del chocolate, llega vuestra perdición: la tarta sacher. Este postre típico de Austria es un verdadero pecado mortal para los más golosos.",
+        "price": "S/20.00"
+    },
+    {
+        "name": "Prinzregententorte",
+        "source": "En Bavaria, al sur de Alemania, encontramos una tarta con nombre de príncipe.El corte transversal de este postre nos deleita con varias capas finas de bizcocho intercaladas con crema de mantequilla y chocolate. Toda una perdición.",
+        "price": "S/30.00"
+    },
+    {
+        "name": "Pastéis de Belém",
+        "source": "La receta de los pastéis de Belém son el secreto mejor guardado de Lisboa.",
+        "price": "S/10.00"
+    },
+    {
+        "name": "Apfelstrudel",
+        "source": "En Austria y el sur de Alemania elaboran un particular pastel de manzana: el apfelstrudel. Un postre con forma de rollo hecho con una fina masa rellena de compota de manzana, pasas, canela y azúcar.",
+        "price": "S/25.00"
+    },
+    {
+        "name": "Daikufu Mochi",
+        "source": "El postre japonés por excelencia es el daikufu: un pequeño pastel de arroz (conocido como mochi) que se sirve con diferentes rellenos dulces: desde fruta, pasta anko (judías rojas endulzadas), helado de té o cereza, nata o chocolate.",
+        "price": "S/20.00"
+    },
+    {
+        "name": "Kanten",
+        "source": "El kanten es una gelatina vegetal muy presente en la repostería japonesa. También conocido como 'agar agar', esta gelatina nipona se obtiene de unas algas marinas.",
+        "price": "S/25.00"
+    },
+    {
+        "name": "Crème brûlée ",
+        "source": " La versión francesa de la crema catalana,la diferencia en la textura y el sabor de ambos postres. La mejor manera de compararlos es ¡probando los dos!",
+        "price": "S/20.00"
+    },
+    {
+        "name": "Brownie",
+        "source": "Su origen nos lleva a 1897, cuando un cocinero estadounidense se olvidó de echarle levadura a un bollo de chocolate que estaba preparando. El resultado ya lo conocemos: un bizcocho compacto con nueces de intenso sabor a chocolate.",
+        "price": "S/15.00"
+    },
+    {
+        "name": "Blinis",
+        "source": "Los blinis son unas tortitas gruesas de pequeño tamaño que como postre suelen servirse con crema y fruta fresca. Son muy utilizados en la cocina rusa.",
+        "price": "S/10.00"
+    }
+  ]

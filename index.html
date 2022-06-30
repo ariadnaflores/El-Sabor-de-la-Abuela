@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>El Sabor de la Abuela</title>
+  </head>
+  <body>
+       
+    <header class="header_area">
+        <div class="top_bar">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="left">
+                        <h5><i class="fa fa-phone"></i>Necesita antojitos? Llamanos ahora:  <a href="tel:01676790690">1800 456 7890</a></h5>
+                    </div>
+                    <div class="right">
+                        <ul class="nav">
+                            <li><a href="#">Nuestra historia</a></li>
+                            <li><a href="#">|</a></li>
+                            <li><a href="blog.html">Noticias &amp; Articulos</a></li>
+                            <li><a href="#">|</a></li>
+                            <li><a href="#">Oportunidad de Franquicia</a></li>
+                            <li><a href="#">|</a></li>
+                            <li>
+                                <select class="nice_select" style="display: none;">
+                                    <option value="1">ES</option>
+                                    <option value="2">Ban</option>
+                                    <option value="2">Aus</option>
+                                </select><div class="nice-select nice_select" tabindex="0"><span class="current">En</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">El Sabor de la Abuela</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-principal">
+                <li class="nav-item">
+                <a class="nav-link" href="#noticias">Inicio</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#empresa">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Postres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Creaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Novedades</a>
+                </li>
+            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- 2.Implementar navegación con los menús usando FETCH usar 5 vinculos de acuerdo al tema de la web-->
+                        <li><a class="dropdown-item" href="#" id="menu-item-postres-españoles">Postres Españoles</a></li>
+                        <!-- 3.Mostrar datos en tablas leyendo datos de archivos JSON (Tienen que armar los JSON de acuerdo al tema de la web) -->
+                        <li><a class="dropdown-item" href="#" id="menu-item-carta">Carta</a></li>
+                        <!-- 4.Mostrar datos en CARDS en lugar de filas de una tabla, leyendo datos de archivos JSON (Tienen que armar los JSON de acuerdo al tema de la web) -->
+                        <li><a class="dropdown-item" href="#" id="menu-item-blog">Blog</a></li>
+                        <!-- Imagenes -->
+                        <li><a class="dropdown-item" href="#" id="menu-item-galeria">Galeria</a></li>
+                        <!-- 6.Buscar un servicio web de internet, cualquier tema, no es necesario relacionado a la web y mostrarlo en la página ewn una tabla simple u otra presentación y 
+                             5.Deben implementar una consulta Maestro Detalles como se hizo en colaboradores, al seleccionar una fila que muestre mas datos al costado con imágenes -->
+                        <li><a class="dropdown-item" href="#" id="menu-item-servicios">Servicios</a></li>
+                        <li><hr class="dropdown-divider"></li><!-- linea para separar -->
+                        <!--Agregar un nuevo enlace a su proyecto (usando FETCH) con el nombre CONSULTA, En esa página debe mostrar como
+                            en la página tienda que se hizo en clase y que se terminó en el video adjunto. Como maestro debe mostrar la 
+                            primera tabla mostrando las imágenes y texto, y al hacer clic en uno de los elementos de la primera tabla debe
+                            mostrar empleando TABS como se hizo en la página de la tienda (video adjunto) en una tabla de bootstrap y Cards, 
+                            los datos de la segunda tabla de acuerdo a la opción de la primera tabla seleccionada.-->
+                        <li><a class="dropdown-item" href="#" id="menu-item-consulta">Consulta</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="reserve_btn"><a href="#">Reservation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--__________________________-->
+    <!--__________________________-->
+    <!--__________________________-->
+
+    <main id="main-content"> <!-- main-content -->
+
+        <div>
+            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 867px; top: 745px; z-index: 1; margin-top: -500px;">
+                <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                    <div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <div class="tp-caption tp-resizeme first_text" data-x="['right','right','right','15','15']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['245','245','245','165','165']" data-fontsize="['80','80','80','40','35']" data-lineheight="['89','89','89','50','45']" data-width="['670','670','670','400','320']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="['left','left','left','left']" id="layer-254276177" style="visibility: inherit; color: white; font-family: 'Merienda One'; font-style: italic ;transition: none 0s ease 0s; text-align: left; line-height: 89px; border-width: 0px; margin: 0px; padding: 0px 0px 20px; letter-spacing: -2px; font-weight: 400; font-size: 80px; white-space: normal; min-height: 0px; min-width: 670px; max-height: none; max-width: 670px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                        Pide tu postre favorito, rápido!</div></div></div></div>
+            
+            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 867px; top: 450px; z-index: 1;">
+                <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                    <div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <div class="tp-caption tp-resizeme secand_text" data-x="['right','right','right','15','15']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['450','450','450','280','280']" data-fontsize="['20','20','20','16','16']" data-lineheight="['32','32','32','32']" data-width="['670','670','670','550','400']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-transform_idle="o:1;" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" id="layer-660316225" style="visibility: inherit; color: aliceblue ;transition: none 0s ease 0s; text-align: inherit; line-height: 32px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: normal; min-height: 0px; min-width: 670px; max-height: none; max-width: 670px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                            Los mejores productos de pasteleria de reconocidas marcas internacionales a tu alcance. Descubre las opciones que tenemos para ti! 
+            </div></div></div></div>
+            
+            <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 867px; top: 545px; z-index: 1;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption tp-resizeme slider_button" data-x="['right','right','right','15','15']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['545','545','545','370','395']" data-fontsize="['14','14','14','14']" data-lineheight="['46','46','46','46']" data-width="['670','670','670','550','400']" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" id="layer-656077064" style="visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 46px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 670px; max-height: none; max-width: 670px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                <a class="view_all_btn" href="#" style="transition: none 0s ease 0s; text-align: inherit; line-height: 45px; border-width: 0px; margin: 0px; padding: 0px 30px; letter-spacing: 0px; height: 50px;font-weight: 400; font-size: 16px;">Saber más...</a>
+            </div></div></div></div>
+        </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/banner4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">  
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/banner1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/banner2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/banner3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+     <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+    <section class="welcome_restro_area p_100">
+        <div class="container">
+            <div class="row welcome_inner">
+                <div class="col-lg-6">
+                    <div class="welcome_text">
+                        <h3>Un Toque Especial</h3>
+                        <h5>Las tortas son especiales. Cada cumpleaños, cada celebración termina con algo dulce: una torta que la gente recordará.</h5>
+                        <p>¡Vamos… atrévete… es momento de liberar al creativo que todos tenemos dentro!¿Qué se te antoja hoy? ¿No tienes mucho tiempo para crear un postre a tu estilo? El sabor de la abuela ha pensado por ti y creó los “Imeldos”, postres prediseñados en variedad de tamaños. ¿Estás listo para probar el toque de la abuela? </p>
+                        <img class="img-fluid" src="img/signature.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="welcome_image d-flex">
+                        <div class="image_item">
+                            <img class="img-fluid" src="imagenes/cake.jpg" alt="">
+                        </div>
+                        <div class="image_item">
+                            <img class="img-fluid" src="imagenes/cake2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section> <!-- mensaje-bienvenida -->
+
+    
+     <!--__________________________-->
+    <!--__________________________-->
+    <!--__________________________-->
+
+
+    <section class="dishes_area p_100">
+        <div class="container">
+            <div class="left_title">
+                <h2>Nuestros Postres Favoritos</h2>
+                <p>Los postres son como una canción que te hace sentir bien y los mejores incluso te hacen bailar.</p>
+            </div>
+            <div class="dishes_slider owl-carousel owl-loaded owl-drag">
+                
+                
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0s ease 0s; width: 3600px;"><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake7.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Torta de Chocolate</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Fudge</a>
+                                <a href="#">Bizcochuelo</a>
+                            </div>
+                            <a href="#"><h5>S/ 45.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Chocomenta</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Menta</a>
+                                <a href="#">Mousse</a>
+                            </div>
+                            <a href="#"><h5>S/ 90.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Delicia de Maracuya</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Moused</a>
+                                <a href="#">Maracuya</a>
+                            </div>
+                            <a href="#"><h5>S/ 80.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake3.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Brownie</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Platano</a>
+                                <a href="#">Suave</a>
+                                <a href="#">Vainilla</a>
+                            </div>
+                            <a href="#"><h5>S/ 30.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake4.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Mousse</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Maracuyá</a>
+                                <a href="#">Mango</a>
+                            </div>
+                            <a href="#"><h5>S/7.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake3.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Cruffin</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Blueberry</a>
+                                <a href="#">Strawberry</a>
+                            </div>
+                            <a href="#"><h5>S/20.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake11.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Brownie</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Vegano</a>
+                                <a href="#">Castañas</a>
+                                <a href="#">Brookies</a>
+                            </div>
+                            <a href="#"><h5>S/30.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake6.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Cupcake</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Red Velvet</a>
+                                <a href="#">Zanahoria</a>
+                            </div>
+                            <a href="#"><h5>S/8.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="imagenes/cake5.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Torta de Chocolate</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Fudge</a>
+                                <a href="#">Bizcochuelo</a>
+                            </div>
+                            <a href="#"><h5>S/10.00</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="img/product/product-2.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Fried Potatoes Veg</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Pork</a>
+                                <a href="#">Veggies</a>
+                                <a href="#">Shoyu</a>
+                            </div>
+                            <a href="#"><h5>$17</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="img/product/product-3.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>Roast Pork (2 Sticks)</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Potato</a>
+                                <a href="#">Bread</a>
+                                <a href="#">Cheese</a>
+                            </div>
+                            <a href="#"><h5>$27</h5></a>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 30px;"><div class="item">
+                    <div class="product_item">
+                        <div class="product_img">
+                            <img class="img-fluid" src="img/product/product-4.jpg" alt="">
+                        </div>
+                        <div class="product_text">
+                            <a href="#"><h4>TORTA DE CHOCOLATE</h4></a>
+                            <div class="cat_list">
+                                <a href="#">Chocolate</a>
+                                <a href="#">Fudge</a>
+                                <a href="#">Bizcochuelo</a>
+                            </div>
+                            <a href="#"><h5>S/ 45.00</h5></a>
+                        </div>
+                    </div>
+                </div></div></div></div><div class="dishes_arrow disabled"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots disabled"></div></div>
+            <div class="text-center">
+                <a class="view_all_btn" href="#">Ver todos los postres favoritos</a>
+            </div>
+        </div>
+    </section>
+    
+<!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+<!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+<!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <section class="discover_menu_area pad_btm">
+        	<div class="discover_menu_inner pad_top">
+
+                <!-- tables -->
+
+                <div class="container">
+                    <h2 class="menu-title">Nuestro Menú</h2>
+                    <table class="table-responsive table table-dark table-borderless">
+                        <thead class="text-table">
+                        <tr>
+                            <th scope="col-3">#</th>
+                            <th scope="col-">Nombre</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-table">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>New York Chessecake</td>
+                            <td>S/20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Mixed Berries</td>
+                            <td>S/30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chocolate Molten Lava Cake</td>
+                            <td>S/35</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Apple Crisp</td>
+                            <td>S/25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Carrot Cake</td>
+                            <td>S/50</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+        		<div class="center text-center">
+        			<p>Una comida sin postre es como un traje sin corbata</p>
+        		</div>
+				<div class="container">
+					<div class="discover_tab">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Main Courses</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Dessert</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Signature</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="starter-tab" data-toggle="tab" href="#starter" role="tab" aria-controls="starter" aria-selected="false">Starter</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="fast-tab" data-toggle="tab" href="#fast" role="tab" aria-controls="fast" aria-selected="false">Fast Food</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content discover_list" id="myTabContent">
+						<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/.30.00</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Vegetarian Fried Noodles </h4></a>
+										<div class="cat_list">
+											<a href="">Potato</a>
+											<a href="">Bread</a>
+											<a href="">Cheese</a>
+										</div>
+										<h5>$14.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Grilled Pork With Preserved Limon</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Tenderloin</a>
+											<a href="">Yogurt</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Cheescake de Nutella</h4></a>
+										<div class="cat_list">
+											<a href="">Oreo</a>
+											<a href="">Arándanos</a>
+											<a href="">Frutos Rojos</a>
+										</div>
+										<h5>S/30.00</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="starter" role="tabpanel" aria-labelledby="starter-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Vegetarian Fried Noodles </h4></a>
+										<div class="cat_list">
+											<a href="">Potato</a>
+											<a href="">Bread</a>
+											<a href="">Cheese</a>
+										</div>
+										<h5>$14.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Grilled Pork With Preserved Limon</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Tenderloin</a>
+											<a href="">Yogurt</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Vegetarian Fried Noodles </h4></a>
+										<div class="cat_list">
+											<a href="">Potato</a>
+											<a href="">Bread</a>
+											<a href="">Cheese</a>
+										</div>
+										<h5>$14.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Grilled Pork With Preserved Limon</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Tenderloin</a>
+											<a href="">Yogurt</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="fast" role="tabpanel" aria-labelledby="fast-tab">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Vegetarian Fried Noodles </h4></a>
+										<div class="cat_list">
+											<a href="">Potato</a>
+											<a href="">Bread</a>
+											<a href="">Cheese</a>
+										</div>
+										<h5>$14.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Grilled Pork With Preserved Limon</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Tenderloin</a>
+											<a href="">Yogurt</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+									<div class="price_list_item">
+										<a href="#"><h4>Pasta with Fish</h4></a>
+										<div class="cat_list">
+											<a href="">Pork</a>
+											<a href="">Lemons</a>
+											<a href="">Onions</a>
+										</div>
+										<h5>$8.99</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </section>
+
+        <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <section class="exprience_area">
+        <div class="container">
+            <div class="exprience_inner_text">
+                <h3>La mejor experiencia de reposteria como ninguna otra</h3>
+                <p>Además, conocerás un poco más de nosotros y te ayudaremos a seguir fomentando esa pasión por disfrutar de un postre creado por ti, mezclando tus ingredientes favoritos.<br> Toda celebración merece un postre especial!</p>
+                <a class="view_all_btn" href="#">Reservar un Postre</a>
+            </div>
+        </div>
+    </section>
+
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <section class="testimonials_area p_100">
+        <div class="container">
+            <div class="single_center_title text-center">
+                <h2>Lo que dicen nuestras clientes</h2>
+            </div>
+            <div class="testi_slider owl-carousel owl-loaded owl-drag">
+                
+                
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1202px, 0px, 0px); transition: all 0s ease 0s; width: 3606px;"><div class="owl-item cloned" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p>Los cheesecakes mantienen un relleno consistente; sin embargo, la base se humedece mucho e incluso se pega a la cartulina que los sostiene (algunos vienen con una cápsula o pipeta con el coulis que hay que apachurrar para bañar la superficie, simpático pero no es necesario el plástico);</p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Mark John - <span>CEO Falcon</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p>Los de cacao peruano son potentes y con un feliz amargo, los de chocolate belga palidecen ante la oferta nacional. No dejan de ser atractivos, pero si los comparamos, les falta carácter.</p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Mark John - <span>CEO Falcon</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p> Los cheesecakes mantienen un relleno consistente; sin embargo, la base se humedece mucho e incluso se pega a la cartulina que los sostiene (algunos vienen con una cápsula o pipeta con el coulis que hay que apachurrar para bañar la superficie, simpático pero no es necesario el plástico);</p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Alex Magled - <span> Desgustador/Critico</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item active" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p>Los de cacao peruano son potentes y con un feliz amargo, los de chocolate belga palidecen ante la oferta nacional. No dejan de ser atractivos, pero si los comparamos, les falta carácter. Ajustando detalles que quizá la rutina no detecta, se podrían lograr mejores resultados e igualar el nivel de su memorable turrón. </p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Paola Miglio - <span>Repostera profesional</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, psam volu ptatem quia voluptas sit aspernatur aut odit aut fugit sed quia con-sequuntur magni dolorqui dolorem ipsum quia dolo.</p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Mark John - <span>CEO Falcon</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div><div class="owl-item cloned" style="width: 569px; margin-right: 32px;"><div class="item">
+                    <div class="testi_item">
+                        <div class="testi_text">
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, psam volu ptatem quia voluptas sit aspernatur aut odit aut fugit sed quia con-sequuntur magni dolorqui dolorem ipsum quia dolo.</p>
+                        </div>
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h4>Mark John - <span>CEO Falcon</span></h4>
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+    </section>
+
+
+
+    <section class="tema_area pad_top">
+        <div class="container">
+            <div class="left_title2">
+                <h2>Nuestros Reposteros</h2>
+                <p>Nuestros Chefs están capacitados específicamente para brindar comida de calidad.</p>
+            </div>
+            <div class="row m-0 team_inner">
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid chefs" src="imagenes/primer-chef.jpg" alt="">
+                        </div>
+                        <div class="team_text">
+                            <a href="#"><h4>Michale Desulva</h4></a>
+                            <p>Repostero profesional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid chefs" src="imagenes/segundo-chef.jpg" alt="">
+                        </div>
+                        <div class="team_text">
+                            <a href="#"><h4>Roseen Joe</h4></a>
+                            <p>Repostero profesional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid chefs" src="imagenes/tercer-chef.jpg" alt="">
+                        </div>
+                        <div class="team_text">
+                            <a href="#"><h4>Merry Vonkee</h4></a>
+                            <p>Repostero profesional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img class="img-fluid chefs" src="imagenes/cuarto-chef.jpeg" alt="">
+                        </div>
+                        <div class="team_text">
+                            <a href="#"><h4>Rossmanx</h4></a>
+                            <p>Repostero profesional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+    <section class="restaurant_view_area pad_btm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="restu_img">
+                        <img class="img-fluid" src="imagenes/restaurant.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="restaurant_details">
+                        <h3>Nuestra Repostería</h3>
+                        <h5>Echa un vistazo anuestra Repostería</h5>
+                        <p>¡No te pierdas las novedades! Aquí podrás conocer todas las promociones y productos nuevos que vamos desarrollando en el taller.</p>
+                        <a class="text_btn_u" href="#">Ver tour de la Repostería</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+    <section class="home_blog_area p_100">
+        <div class="container">
+            <div class="center_title">
+                <h2>Articulos &amp; Blogs</h2>
+                <p>Lo mejor en repostería junta en una sola pagina!</p>
+            </div>
+
+            <!-- Card -->
+            <div class="card-group">
+                <div class="card">
+                <img src="imagenes/cake7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cheesecake con Frutos Rojos</h5>
+                    <p class="card-text">El cheesecake, conocido también como pastel de queso, es un postre clásico de la cocina americana. 
+                        Popular en todo el mundo, su principal ingrediente es el queso crema. Su fondo es crujiente y se obtiene al moler o
+                        triturar galletas y mezclarlas con mantequilla y azúcar.</p>
+                    <a class="text_btn" href="#">Seguir leyendo...</a>
+                </div>
+                </div>
+                <div class="card">
+                <img src="imagenes/cake12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Delicioso Brownie de Café</h5>
+                    <p class="card-text">Los brownies son deliciosos, chocolatosos, irresistibles y perfectos para cualquier ocasión.
+                        Puedes acompañar esta versión de Brownie de Café con helado y sirope de chocolate, para alcanzar la felicidad suprema.</p>
+                    <a class="text_btn" href="#">Seguir leyendo...</a>
+                </div>
+                </div>
+                <div class="card">
+                <img src="imagenes/cake10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Galletas con las que vale la pena pecar</h5>
+                    <p class="card-text">Comerse despacito una galleta sabrosa, hecha con ingredientes naturales, el punto justo de azúcar, 
+                        tal vez un poco de chocolate y un café o un té para acompañar es uno de los grandes placeres de la vida.</p>
+                    <a class="text_btn" href="#">Seguir leyendo...</a>
+                </div>
+                </div>
+            </div>
+        <br><br>
+
+            <div class="row home_blog_inner">
+                <div class="col-lg-4">
+                    <div class="h_blog_item">
+                        <div class="blog_img">
+                            <img class="img-fluid" src="imagenes/cake13.jpg" alt="">
+                        </div>
+                        <div class="blog_text">
+                            <a href="#"><h5>Mayo 5, 2021</h5></a>
+                            <a href="#"><h4>Top 5 mejores postres frios para este Verano!</h4></a>
+                            <p>Los mejores postres frios para saborear en esta temporada de Verano! Para mantenerte fresco y con un sabor dulce</p>
+                            <a class="text_btn" href="#">Seguir leyendo...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="h_blog_item">
+                        <div class="blog_img">
+                            <img class="img-fluid" src="imagenes/cake14.jpg" alt="">
+                        </div>
+                        <div class="blog_text">
+                            <a href="#"><h5>Mayo 5, 2021</h5></a>
+                            <a href="#"><h4>Top 5 mejores postres calientes de Navidad</h4></a>
+                            <p>Los postres calientes mas deliciosos de la temporada de navidad las encontraras aqui con su receta!</p>
+                            <a class="text_btn" href="#">Seguir leyendo...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="h_blog_item">
+                        <div class="blog_img">
+                            <img class="img-fluid" src="imagenes/cake15.jpg" alt="">
+                        </div>
+                        <div class="blog_text">
+                            <a href="#"><h5>Mayo 5, 2021</h5></a>
+                            <a href="#"><h4>Top 5 mejores postres que explotaran de sabor en tu cabeza </h4></a>
+                            <p>Los mejores postres los encontraras aqui para acompañarlo con cualquier comida o bebida que desees! </p>
+                            <a class="text_btn" href="#">Seguir leyendo...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe_area">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="left">
+                    <h5>Únase a nuestra lista de boletines para recibir las últimas novedades<br> ofertas, descuentos y otros beneficios</h5>
+                </div>
+                <div class="right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email address">
+                        <div class="input-group-append">
+                            <button class="btn submit_btn" type="button" id="button-addon2">Subscribete ahora!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        	 <!-- Forms y Collapse -->
+        <div class="container">
+            <h2 class="contact-title">Póngase En Contacto</h2>
+            <p class="contact-text">¿Tiene algo en mente para informarnos? Por favor, no se demore en contáctarse con nosotros a través de nuestro formulario de contacto.</p>
+                <a class="btn btn-primary btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Formulario
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                
+                    <div class="col-12">
+                    <button class="btn btn-primary btn-dark " type="submit">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+    </section>
+ </main> <!-- main-content -->
+ <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+    <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <section class="footer_area">
+        <div class="container">
+            <div class="footer_widgets">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <aside class="f_widget about_widget">
+                            <img src="img/f-logo.png" alt="">
+                            <p>Nuestro objetivo es crear un espacio agradable y acogedor, donde se pueda compartir un antojo o comprar un detalle para regalar.</p>
+                            <ul class="nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <aside class="f_widget link_widget">
+                            <div class="f_title">
+                                <h3>Enlaces rápidos</h3>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li><a href="#">Su cuenta</a></li>
+                                <li><a href="#">Ver pedido</a></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Terminos &amp; Condiciones</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <aside class="f_widget link_widget">
+                            <div class="f_title">
+                                <h3>Tiempos de trabajo</h3>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li><a href="#">Mon. :  Fri.: 8 am - 8 pm</a></li>
+                                <li><a href="#">Sat. : 9am - 4pm</a></li>
+                                <li><a href="#">Sun. : Closed</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <aside class="f_widget contact_widget">
+                            <div class="f_title">
+                                <h3>Datos de contacto</h3>
+                            </div>
+                            <a href="tel:+8801676790690"><h4>(1800) 574 9687</h4></a>
+                            <p>El sabor de la Abuela <br>256, La molina,, Lima, 5245</p>
+                            <a href="elsabordelaabuela@gmail.com"><h5>elsabordelaabuela@gmail.com</h5></a>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright d-flex justify-content-between">
+                <div class="left">
+                    <p>© Ariadna Flores All right reserved.</p>
+                </div>
+                <div class="right">
+                    <a class="text_btn" href="#">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
